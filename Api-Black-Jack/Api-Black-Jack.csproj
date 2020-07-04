@@ -6,4 +6,13 @@
   </PropertyGroup>
 
 
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Custom' ">
+    <StartAction>Project</StartAction>
+    <LaunchUrl>MainDeck</LaunchUrl>
+    <ApplicationURL>https://localhost:33775;http://localhost:31181</ApplicationURL>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
 </Project>
