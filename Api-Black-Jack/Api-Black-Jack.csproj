@@ -8,8 +8,14 @@
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'Custom' ">
     <StartAction>Project</StartAction>
+    <ExternalConsole>true</ExternalConsole>
     <LaunchUrl>MainDeck</LaunchUrl>
     <ApplicationURL>https://localhost:33775;http://localhost:31181</ApplicationURL>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Watch' ">
+    <StartAction>Project</StartAction>
+    <LaunchUrl>api/MainDeck</LaunchUrl>
+    <ApplicationURL>https://localhost:5001;http://localhost:5000</ApplicationURL>
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
